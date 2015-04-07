@@ -1,0 +1,9 @@
+
+<%= "Upcoming Appointments for #{current_user.username}: #{current_user.appointments.count}" %><br>
+<%= "Doctors Assigned to #{current_user.username}: #{current_user.doctors.uniq.count}" %><br>
+
+<% current_user.appointments.each do |appointment| %>
+<%= link_to "Edit", edit_user_appointment_path(current_user, appointment) %>
+<% end %>
+<br>
+<%= link_to "New Appointment", new_user_appointment_path(current_user.id) %>
