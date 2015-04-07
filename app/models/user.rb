@@ -3,5 +3,5 @@ class User < ActiveRecord::Base
 
   validates :username, presence: true
   has_many :appointments
-  has_many :doctors, through: :appointment
+  has_many :doctors, through: :appointments
 end
