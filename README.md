@@ -18,3 +18,4 @@ The feature spec files expect an unnested appointments index, which only shows a
 
 Pry and launchy are included by default for debugging capybara specs.
 # practice-assesment
+# practice-assesment
